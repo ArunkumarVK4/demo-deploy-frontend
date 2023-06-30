@@ -25,8 +25,7 @@ function Dashboard() {
   };
 
   useEffect(async() => {
-    // fetchData(); // this will fetch all apis to this above mentioned server
-    await axios.get(`${config.api}/students`)
+    fetchData(); // this will fetch all apis to this above mentioned server
   }, []);
 
   const formik = useFormik({
